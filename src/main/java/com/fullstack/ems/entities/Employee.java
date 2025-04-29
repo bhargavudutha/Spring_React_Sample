@@ -6,10 +6,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-/*@NoArgsConstructor
-@AllArgsConstructor
-@Setter
-@Getter*/
+
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@Setter
+//@Getter
 @Entity
 @Table(name="employees")
 public class Employee {
@@ -71,3 +72,6 @@ public class Employee {
     }
 
 }
+
+
+

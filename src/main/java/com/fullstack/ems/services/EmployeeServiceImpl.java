@@ -5,14 +5,14 @@ import com.fullstack.ems.entities.Employee;
 import com.fullstack.ems.exceptions.ResourceNotFoundException;
 import com.fullstack.ems.mappers.EmployeeMapper;
 import com.fullstack.ems.repositories.EmployeeRepository;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-//@AllArgsConstructor
+
+
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
@@ -61,3 +61,5 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeRepository.deleteById(employeeId);
     }
 }
+
+

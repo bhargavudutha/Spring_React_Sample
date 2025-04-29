@@ -1,9 +1,7 @@
 package com.fullstack.ems.controllers;
 
 import com.fullstack.ems.dtos.EmployeeDto;
-import com.fullstack.ems.entities.Employee;
 import com.fullstack.ems.services.EmployeeService;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//@AllArgsConstructor
+@CrossOrigin("*") // In order to give access to the requests coming from front end
+
+
+
 @RestController
 @RequestMapping("/api/employees")
 public class EmployeeController {
@@ -51,3 +52,6 @@ public class EmployeeController {
     }
 
 }
+
+
+
